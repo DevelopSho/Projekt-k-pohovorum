@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cs-">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Creating character" />
+    <meta name="author" content="JustOnlySho 2023" />
+    <title>Welcome page</title>
+    <link rel="icon" type="image/x-icon" href="css/character.png" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/uprava.css">
+    <script src="https://kit.fontawesome.com/e436dd4ad2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light"><i class="fa-solid fa-bars" style="color: #511f1f; padding-right: 0.9rem"></i>Navigační menu</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html"><i class="far fa-clipboard" style="color: #7a0000; padding-right: 1.2rem;"></i>Slovo
+                    vývojáře</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="vytvoreni_postavy.html">
+                        <i class="far fa-solid fa-user-plus" style="color: #7a0000; padding-right: 0.6rem;"></i> Vytvoření postavy</a>
+          
+
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary" id="sidebarToggle">Skrýt menu</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ostatní</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="https://www.justonlysho.cz/">JustOnlySHo</a>
+                                    <a class="dropdown-item" href="http://newwayroleplay.cz/">NWRP</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid">
+                <h1 class="mt-4 centrovac"><strong>Zde si můžeš pomocí formuláře vytvořit postavu!</strong></h1>
+                <p>
+                <div class="centrovac">
+
+                    <form id="formular">
+                        <label for="name">Jméno:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        
+                        <label for="lname">Příjmení:</label><br>
+                        <input type="text" id="lname" name="lname" required><br>
+                        
+                        <label for="year">Narození:</label><br>
+                        <input type="number" id="year" name="year" required><br>
+                        
+                        <label for="karma">Karma:</label><br>
+                        <select id="karma" name="karma" required>
+                            <option value="">-- Vyberte --</option>
+                            <option value="Dobrá">Dobrá</option>
+                            <option value="Neutrální">Neutrální</option>
+                            <option value="Zlá">Zlá</option>
+                        </select><br>
+                        
+                        <label for="rasa">Rasa:</label><br>
+                        <select id="rasa" name="rasa" required>
+                            <option value="">-- Vyberte --</option>
+                            <option value="Člověk">Člověk</option>
+                            <option value="Elf">Elf</option>
+                            <option value="Humanoid">Humanoid</option>
+                            <option value="Trpaslík">Trpaslík</option>
+                        </select><br>
+                        
+                        <label for="txtarea">Lore:</label><br>
+                        <textarea id="txtarea" name="txtarea" rows="10" cols="85"></textarea><br>
+                        <br>
+                        <button type="submit" id="potvrdit">Kliknutím zde si můžeš vytvořit postavu:</button>
+                        <br>
+                    </form>
+                    <br><br>
+                    <div id="vypis"></div>
+                        
+             
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/obsluha.js"></script>
+        <script src="js/postava.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+#vypis {
+    margin: 0 auto;
+    display: block;
+    word-wrap: break-word;
+    width: 38vw;
+    text-align: left;
+}
+
+.text {
+    color: #680808;
+    font-weight: 1000;
+}
+
+.picture {
+    float: right;
+}
+
+.edit-button {
+    background-color: rgb(255, 153, 0);
+    border-radius: 3rem;
+    color: rgb(250, 241, 241);
+}
+
+.delete-button {
+    background-color:rgb(4, 160, 4);
+    border-radius: 3rem;
+    color: white;
+}
+
+.save {
+    background-color:rgb(214, 9, 9);
+    border-radius: 3rem;
+    color: white;
+}
